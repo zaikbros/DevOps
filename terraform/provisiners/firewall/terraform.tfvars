@@ -1,0 +1,12 @@
+name_firewall = "terraform-firewall"
+project                 = "devops-practice-411411"
+zone                    = "us-central1-a"
+name-terraform-network  = "terraform-network"
+ports                   = [ "80", "8080", "22", "443" ]
+protocol                = "tcp"
+target_tags             = [ "web", "http-server", "https-server" ]
+create_timeouts         = "20m"
+delete_timeouts         = "15m"
+update_timeouts         = "10m"
+direction               = "INGRESS"
+priority                = 1000

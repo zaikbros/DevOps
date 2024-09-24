@@ -1,0 +1,19 @@
+project                        = "andheri-duniya"
+database_name                  = "made-by-terra"
+instance_name                  = "terra-database-instance"
+region                         = "us-central1"
+database_version               = "MYSQL_8_0"
+tier                           = "db-g1-small"
+edition                        = "ENTERPRISE"
+maintenance_day                = 7
+transaction_log_retention_days = 6
+backup_start_time              = "23:00"
+authorized_network_name        = "my-instance"
+authorized_network_value       = "34.132.154.181"
+user_labels                    = { env = "dev" }
+root_password                  = null
+enable_backup                  = true
+enable_deletion_protection     = false
+host                           = "0.0.0.0/0"
+user_name                      = "root"
+update_track                   = "stable"
